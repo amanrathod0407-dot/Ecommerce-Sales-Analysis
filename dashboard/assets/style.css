@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* Global Font & Dark Mesh Background */
+html, body, [class*="css"], .stApp {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    background: radial-gradient(circle at 10% 20%, #111827 0%, #070a11 90%) !important;
+    color: #f3f4f6 !important;
+}
+
+/* Hide Default Streamlit Elements */
+#MainMenu, footer, header {
+    visibility: hidden;
+}
+
+/* Sidebar Overhaul */
+section[data-testid="stSidebar"] {
+    background-color: #0c1019 !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #cbd5e1 !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
+    font-weight: 600;
+}
+
+/* Custom Header Block */
+.hero-header {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.9) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 6px solid #00f2fe;
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px);
+}
+
+.hero-header h1 {
+    font-size: 28px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    margin: 0 0 6px 0 !important;
+    letter-spacing: -0.5px;
+}
+
+.hero-header p {
+    color: #94a3b8 !important;
+    font-size: 15px !important;
+    margin: 0 !important;
+}
+
+/* SaaS Card Component */
+.saas-card {
+    background: rgba(17, 24, 39, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
+}
+
+.saas-card:hover {
+    border-color: rgba(0, 242, 254, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 30px -10px rgba(0, 242, 254, 0.15);
+}
+
+.saas-card-danger:hover {
+    border-color: rgba(239, 68, 68, 0.5);
+    box-shadow: 0 20px 30px -10px rgba(239, 68, 68, 0.15);
+}
+
+.saas-card-success:hover {
+    border-color: rgba(16, 185, 129, 0.5);
+    box-shadow: 0 20px 30px -10px rgba(16, 185, 129, 0.15);
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 14px;
+}
+
+.badge-cyan {
+    background: rgba(0, 242, 254, 0.12);
+    color: #00f2fe;
+    border: 1px solid rgba(0, 242, 254, 0.3);
+}
+
+.badge-red {
+    background: rgba(239, 68, 68, 0.12);
+    color: #f87171;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.badge-green {
+    background: rgba(16, 185, 129, 0.12);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* Typography Inside Cards */
+.card-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #94a3b8;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-value {
+    font-size: 30px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.card-desc {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0;
+}

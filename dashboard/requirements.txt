@@ -1,0 +1,9 @@
+streamlit
+pandas
+plotly
+numpy
+openpyxl
+streamlit-option-menu
+streamlit-extras
+streamlit-lottie
+pillow
